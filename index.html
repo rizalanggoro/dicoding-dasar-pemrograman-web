@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizal Anggoro</title>
+
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css preflight from tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@3.4.1/src/css/preflight.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="container">
+        <a href="/" class="title">
+          <span>RA</span>
+          Rizal Anggoro</a
+        >
+        <button id="navbar-menu-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+        <nav id="navbar-menu" class="navbar-menu-hidden">
+          <ul id="navbar-menus"></ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <article id="hero">
+        <h1 class="title-1">Hello!</h1>
+        <h1 class="title-2">You can call me <mark>Rizal</mark></h1>
+        <p class="description">
+          An Informatics student who has an interest in programming and
+          currently studying at
+          <a href="https://uns.ac.id" target="_blank"
+            >Sebelas Maret University</a
+          >. I work with
+          <a href="https://flutter.dev" target="_blank">Flutter</a> for mobile
+          and <a href="https://react.dev" target="_blank">React</a> for website.
+        </p>
+
+        <div class="wrapper-cta">
+          <a href="#posts">
+            <button class="filled-button">Read the post</button>
+          </a>
+          <a href="#contacts">
+            <button class="outlined-button">Contact me</button>
+          </a>
+        </div>
+      </article>
+
+      <div id="content">
+        <div>
+          <aside>
+            <div class="wrapper-profile">
+              <img
+                src="https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <h1 class="name">Rizal Dwi Anggoro</h1>
+            <p>
+              Passionate developer with expertise in web and Android
+              development. Dedicated to creating efficient, user-friendly
+              solutions. Constantly learning and exploring new technologies to
+              stay updated in the ever-evolving field of software development
+            </p>
+
+            <p class="location">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-map-pin"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Magelang, Central Java, Indonesia
+            </p>
+
+            <hr />
+
+            <h3 class="title">Pinned Posts</h3>
+
+            <ul id="list-pinned-posts"></ul>
+          </aside>
+        </div>
+
+        <section>
+          <!-- posts -->
+          <article id="posts">
+            <h1 class="title">Featured Posts</h1>
+            <p class="description">
+              Discover curated blog posts offering practical insights for web
+              and Android development. Stay updated with expert perspectives and
+              trends to enhance your skills in both domains
+            </p>
+
+            <div id="grid-posts"></div>
+
+            <button class="outlined-button">See more posts</button>
+          </article>
+
+          <!-- projects -->
+          <article id="projects">
+            <h1 class="title">My Projects</h1>
+            <p class="description">
+              Discover my portfolio of web and Android projects, showcasing my
+              passion and expertise in technology. Explore a diverse range of
+              innovative endeavors, each crafted with precision and
+              functionality. Dive into my creations and witness firsthand my
+              dedication to excellence in development
+            </p>
+
+            <div id="grid-projects"></div>
+
+            <button class="outlined-button">See more projects</button>
+          </article>
+
+          <!-- contacts -->
+          <article id="contacts">
+            <div class="container">
+              <h1 class="title">Get in touch</h1>
+              <p class="description">
+                Feel free to contact me, I always excited to connect with
+                everyone. I will be happy to help!
+              </p>
+
+              <div id="wrapper-links">
+                <a href="https://instagram.com/rizal.angg_" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-instagram"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+
+                  <span>Instagram</span>
+                </a>
+
+                <a href="https://github.com/rizalanggoro" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+
+                  <span>Github</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="text-1">
+        Made with
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="rgb(220 38 38)"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-heart"
+          >
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+            />
+          </svg>
+        </span>
+        by Rizal Anggoro in Magelang, Central Java
+      </p>
+      <p class="text-2">© Rizal Anggoro 2024</p>
+    </footer>
+
+    <!-- import script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
